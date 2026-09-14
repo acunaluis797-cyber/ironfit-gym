@@ -1,0 +1,815 @@
+css
+/* =========================================================
+   CONFIGURACIÓN GENERAL
+   ========================================================= */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    background-color: #111111;
+    color: #eeeeee;
+}
+
+
+/* =========================================================
+   CONTENEDOR
+   ========================================================= */
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+
+/* =========================================================
+   ENCABEZADO
+   ========================================================= */
+
+.main-header {
+    background:
+        linear-gradient(
+            rgba(0, 0, 0, 0.80),
+            rgba(0, 0, 0, 0.80)
+        ),
+        linear-gradient(135deg, #1c1c1c, #090909);
+
+    color: white;
+    padding: 70px 0;
+    text-align: center;
+
+    border-bottom: 4px solid #e63946;
+}
+
+
+#titulo-principal {
+    font-size: 55px;
+    font-weight: 900;
+    letter-spacing: 5px;
+    color: #e63946;
+    margin-bottom: 10px;
+}
+
+
+.main-header p {
+    font-size: 20px;
+    color: #dddddd;
+}
+
+
+/* =========================================================
+   MENÚ
+   ========================================================= */
+
+nav {
+    background-color: #181818;
+
+    width: 100%;
+
+    position: sticky;
+
+    top: 0;
+
+    z-index: 1000;
+
+    border-bottom: 1px solid #333333;
+}
+
+
+nav ul {
+    list-style: none;
+
+    text-align: center;
+
+    padding: 15px 0;
+}
+
+
+nav ul li {
+    display: inline;
+
+    margin: 0 8px;
+}
+
+
+nav ul li a {
+    color: #ffffff;
+
+    text-decoration: none;
+
+    padding: 9px 12px;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+
+nav ul li a:hover {
+    background-color: #e63946;
+
+    border-radius: 4px;
+
+    color: white;
+}
+
+
+.xml-link {
+    border: 1px solid #e63946;
+}
+
+
+/* =========================================================
+   SECCIONES
+   ========================================================= */
+
+.section-box {
+    padding: 35px;
+
+    margin: 25px 0;
+
+    background-color: #1b1b1b;
+
+    border: 1px solid #333333;
+
+    border-radius: 8px;
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+}
+
+
+.section-title {
+    color: #e63946;
+
+    font-size: 30px;
+
+    margin-bottom: 15px;
+
+    border-left: 5px solid #e63946;
+
+    padding-left: 12px;
+}
+
+
+/* =========================================================
+   INTRODUCCIÓN
+   ========================================================= */
+
+.intro-section {
+    padding: 50px;
+}
+
+
+.intro-content {
+    display: grid;
+
+    grid-template-columns: 1.3fr 1fr;
+
+    gap: 50px;
+
+    align-items: center;
+}
+
+
+.welcome-text {
+    color: #e63946;
+
+    font-weight: bold;
+
+    letter-spacing: 2px;
+}
+
+
+.intro-content h2 {
+    font-size: 42px;
+
+    line-height: 1.2;
+
+    margin: 15px 0;
+}
+
+
+.intro-content h2 span {
+    color: #e63946;
+}
+
+
+.intro-content p {
+    color: #cccccc;
+
+    margin-bottom: 25px;
+}
+
+
+/* =========================================================
+   BOTÓN PRINCIPAL
+   ========================================================= */
+
+.main-button {
+    display: inline-block;
+
+    background-color: #e63946;
+
+    color: white;
+
+    text-decoration: none;
+
+    padding: 13px 25px;
+
+    border-radius: 5px;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+
+.main-button:hover {
+    background-color: #b92330;
+
+    transform: translateY(-2px);
+}
+
+
+/* =========================================================
+   IMAGEN / ÁREA VISUAL
+   ========================================================= */
+
+.gym-image {
+    width: 100%;
+}
+
+
+.image-placeholder {
+    height: 300px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #252525,
+            #111111
+        );
+
+    border: 2px solid #e63946;
+
+    border-radius: 8px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    align-items: center;
+
+    text-align: center;
+}
+
+
+.image-placeholder span {
+    font-size: 100px;
+}
+
+
+.image-placeholder p {
+    color: #e63946;
+
+    font-size: 25px;
+
+    font-weight: bold;
+
+    letter-spacing: 3px;
+}
+
+
+/* =========================================================
+   HORARIO
+   ========================================================= */
+
+#horario ul {
+    list-style: none;
+
+    padding-left: 0;
+
+    margin-top: 20px;
+}
+
+
+#horario li {
+    background-color: #242424;
+
+    padding: 15px;
+
+    margin-bottom: 10px;
+
+    border-left: 5px solid #e63946;
+
+    color: #dddddd;
+}
+
+
+#horario strong {
+    color: white;
+}
+
+
+/* =========================================================
+   SERVICIOS
+   ========================================================= */
+
+.services-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 25px;
+
+    margin-top: 25px;
+}
+
+
+.service-card {
+    background-color: #242424;
+
+    padding: 30px;
+
+    border-radius: 8px;
+
+    text-align: center;
+
+    border: 1px solid #333333;
+
+    transition: 0.3s;
+}
+
+
+.service-card:hover {
+    transform: translateY(-7px);
+
+    border-color: #e63946;
+}
+
+
+.service-icon {
+    font-size: 55px;
+
+    margin-bottom: 10px;
+}
+
+
+.service-card h3 {
+    color: #e63946;
+
+    font-size: 23px;
+
+    margin-bottom: 10px;
+}
+
+
+.service-card p {
+    color: #bbbbbb;
+}
+
+
+/* =========================================================
+   PLANES
+   ========================================================= */
+
+.layout-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 25px;
+
+    margin-top: 25px;
+}
+
+
+.plan-card {
+    position: relative;
+
+    background-color: #242424;
+
+    padding: 30px;
+
+    border-radius: 8px;
+
+    border: 1px solid #333333;
+
+    text-align: center;
+
+    transition: 0.3s;
+}
+
+
+.plan-card:hover {
+    transform: translateY(-5px);
+
+    border-color: #e63946;
+}
+
+
+.plan-card h3 {
+    color: white;
+
+    font-size: 25px;
+
+    margin-bottom: 15px;
+}
+
+
+.price {
+    color: #e63946;
+
+    font-size: 38px;
+
+    font-weight: bold;
+
+    margin-bottom: 10px;
+}
+
+
+.price small {
+    font-size: 16px;
+
+    color: #bbbbbb;
+}
+
+
+.plan-card > p:not(.price) {
+    color: #bbbbbb;
+
+    margin-bottom: 20px;
+}
+
+
+.plan-card ul {
+    list-style: none;
+
+    text-align: left;
+}
+
+
+.plan-card li {
+    padding: 8px 0;
+
+    border-bottom: 1px solid #333333;
+
+    color: #dddddd;
+}
+
+
+.plan-card li::before {
+    content: "✓ ";
+
+    color: #e63946;
+
+    font-weight: bold;
+}
+
+
+.featured-plan {
+    border: 2px solid #e63946;
+
+    transform: scale(1.03);
+}
+
+
+.featured-plan:hover {
+    transform: scale(1.03) translateY(-5px);
+}
+
+
+.popular {
+    position: absolute;
+
+    top: -13px;
+
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    background-color: #e63946;
+
+    color: white;
+
+    padding: 5px 15px;
+
+    border-radius: 20px;
+
+    font-size: 12px;
+
+    font-weight: bold;
+}
+
+
+/* =========================================================
+   TABLA
+   ========================================================= */
+
+.full-width {
+    width: 100%;
+
+    margin-top: 40px;
+}
+
+
+.table-title {
+    margin-bottom: 10px;
+
+    color: white;
+}
+
+
+table {
+    width: 100%;
+
+    border-collapse: collapse;
+
+    margin-top: 15px;
+}
+
+
+table th,
+table td {
+    border: 1px solid #444444;
+
+    padding: 14px;
+
+    text-align: left;
+}
+
+
+table th {
+    background-color: #e63946;
+
+    color: white;
+}
+
+
+table td {
+    background-color: #242424;
+
+    color: #dddddd;
+}
+
+
+.promo-row {
+    background-color: #321a1d;
+
+    font-weight: bold;
+}
+
+
+.promo-row td {
+    background-color: #321a1d;
+}
+
+
+/* =========================================================
+   MAPA
+   ========================================================= */
+
+.map-container {
+    margin-top: 20px;
+
+    overflow: hidden;
+
+    border-radius: 8px;
+
+    border: 2px solid #333333;
+}
+
+
+/* =========================================================
+   FORMULARIO
+   ========================================================= */
+
+.contact-description {
+    color: #bbbbbb;
+
+    margin-bottom: 25px;
+}
+
+
+#contact-form {
+    max-width: 800px;
+
+    margin: auto;
+}
+
+
+#contact-form label {
+    display: block;
+
+    margin-bottom: 7px;
+
+    font-weight: bold;
+
+    color: #eeeeee;
+}
+
+
+#contact-form input[type="text"],
+#contact-form input[type="email"],
+#contact-form select,
+#contact-form textarea {
+    width: 100%;
+
+    padding: 13px;
+
+    margin-bottom: 18px;
+
+    border: 1px solid #444444;
+
+    border-radius: 5px;
+
+    background-color: #242424;
+
+    color: white;
+
+    font-family: Arial, sans-serif;
+
+    font-size: 15px;
+}
+
+
+#contact-form input:focus,
+#contact-form select:focus,
+#contact-form textarea:focus {
+    outline: none;
+
+    border-color: #e63946;
+}
+
+
+#contact-form textarea {
+    resize: vertical;
+}
+
+
+/* =========================================================
+   BOTÓN FORMULARIO
+   ========================================================= */
+
+.submit-button {
+    background-color: #e63946;
+
+    color: white;
+
+    padding: 13px 25px;
+
+    border: none;
+
+    cursor: pointer;
+
+    border-radius: 5px;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+
+.submit-button:hover {
+    background-color: #b92330;
+
+    transform: translateY(-2px);
+}
+
+
+/* =========================================================
+   FOOTER
+   ========================================================= */
+
+.main-footer {
+    background-color: #080808;
+
+    color: #aaaaaa;
+
+    text-align: center;
+
+    padding: 25px 0;
+
+    margin-top: 30px;
+
+    border-top: 2px solid #e63946;
+}
+
+
+.main-footer a {
+    color: #e63946;
+
+    text-decoration: none;
+}
+
+
+.main-footer a:hover {
+    text-decoration: underline;
+}
+
+
+/* =========================================================
+   DISEÑO RESPONSIVO
+   ========================================================= */
+
+@media (max-width: 900px) {
+
+    .intro-content {
+        grid-template-columns: 1fr;
+    }
+
+
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    .layout-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    .featured-plan {
+        transform: none;
+    }
+
+
+    .featured-plan:hover {
+        transform: translateY(-5px);
+    }
+
+}
+
+
+@media (max-width: 700px) {
+
+    #titulo-principal {
+        font-size: 38px;
+    }
+
+
+    .main-header {
+        padding: 45px 0;
+    }
+
+
+    nav ul li {
+        display: block;
+
+        margin: 10px 0;
+    }
+
+
+    .section-box {
+        padding: 25px 20px;
+    }
+
+
+    .intro-section {
+        padding: 30px 20px;
+    }
+
+
+    .intro-content h2 {
+        font-size: 32px;
+    }
+
+
+    .image-placeholder {
+        height: 230px;
+    }
+
+}
+/* Imagen principal del gimnasio */
+.gym-image {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.gym-image img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    display: block;
+    border-radius: 12px;
+    border: 2px solid #e63946;
+    box-shadow: 0 10px 30px rgba(230, 57, 70, 0.3);
+}

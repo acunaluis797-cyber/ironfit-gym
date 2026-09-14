@@ -1,0 +1,58 @@
+xml
+<?xml version="1.0" encoding="UTF-8"?>
+
+<catalogo_gimnasio>
+
+    <membresia id="M001">
+
+        <nombre>Plan Básico</nombre>
+
+        <tipo>Membresía mensual</tipo>
+
+        <duracion>1 mes</duracion>
+
+        <precio moneda="MXN">399.00</precio>
+
+        <descripcion>
+            Acceso al gimnasio, área de pesas y área de cardio.
+        </descripcion>
+
+    </membresia>
+
+
+    <membresia id="M002">
+
+        <nombre>Plan Pro</nombre>
+
+        <tipo>Membresía trimestral</tipo>
+
+        <duracion>3 meses</duracion>
+
+        <precio moneda="MXN">999.00</precio>
+
+        <descripcion>
+            Acceso al gimnasio, cardio, pesas y entrenamiento funcional.
+        </descripcion>
+
+    </membresia>
+
+
+    <membresia id="M003">
+
+        <nombre>Plan Elite</nombre>
+
+        <tipo>Membresía anual</tipo>
+
+        <duracion>12 meses</duracion>
+
+        <precio moneda="MXN">2999.00</precio>
+
+        <descripcion>
+            Acceso ilimitado, áreas de cardio y pesas,
+            entrenamiento funcional y asesoría básica.
+        </descripcion>
+
+    </membresia>
+
+</catalogo_gimnasio>
+```
